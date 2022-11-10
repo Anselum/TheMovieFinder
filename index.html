@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Movie Finder</title>
+    <link rel="stylesheet" href="./Styles/main.css">
+    <link rel="stylesheet" href="./Styles/card.css">
+    <link rel="stylesheet" href="./Styles/overlay.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Oleo+Script:wght@400;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body id="body">
+
+    <div class="header">
+        <a href="./index.html">
+            <h1 onclick="homeOnClick()">M<sub>F</sub></h1>
+        </a>
+
+        <div id="searchBar">
+            <input type="text" id="search" class="search" placeholder="Search Movies..." autocomplete="off">
+            <button type="submit" id="submit" class="submit">
+                <img src="./Images/searchIcon.png" alt="">
+            </button>
+        </div>
+        <div class="menuButton" onclick="menuOnClick()">
+            <img src="./Images/menu.png" alt="Menu">
+        </div>
+    </div>
+
+    <div id="filterMenu" class="hideScroll">
+        <div class="filterTitle">
+            <h2>Filters</h2>
+            <img src="./Images/close.png" alt="Close" onclick="closeOnClick()">
+        </div>
+        <div id="tags"></div>
+    </div>
+
+    <main id="main">
+        <!-- <div class="movie">
+            <div class="imageDiv">
+                <img src="./Images/movie.avif" alt="Movie Image" class="movieImage">
+                <div class="ageRating">
+                    <p>U</p>
+                </div>
+            </div>
+            <div class="movieBottomDiv">
+                <div class="movieTitle">Movie Title</div>
+                <div class="rating">4.5</div>
+            </div>
+        </div>
+        <div class="movie">
+            <div class="imageDiv">
+                <img src="./Images/movie.avif" alt="Movie Image" class="movieImage">
+                <div class="ageRating">
+                    <p>U</p>
+                </div>
+            </div>
+            <div class="movieBottomDiv">
+                <div class="movieTitle">Movie Title</div>
+                <div class="rating">4.5</div>
+            </div>
+        </div>
+        <div class="movie">
+            <div class="imageDiv">
+                <img src="./Images/movie.avif" alt="Movie Image" class="movieImage">
+                <div class="ageRating">
+                    <p>U</p>
+                </div>
+            </div>
+            <div class="movieBottomDiv">
+                <div class="movieTitle">Movie Title</div>
+                <div class="rating">4.5</div>
+            </div>
+        </div>
+        <div class="movie">
+            <div class="imageDiv">
+                <img src="./Images/movie.avif" alt="Movie Image" class="movieImage">
+                <div class="ageRating">
+                    <p>U</p>
+                </div>
+            </div>
+            <div class="movieBottomDiv">
+                <div class="movieTitle">Movie Title</div>
+                <div class="rating">4.5</div>
+            </div>
+        </div>
+        <div class="movie">
+            <div class="imageDiv">
+                <img src="./Images/movie.avif" alt="Movie Image" class="movieImage">
+                <div class="ageRating">
+                    <p>U</p>
+                </div>
+            </div>
+            <div class="movieBottomDiv">
+                <div class="movieTitle">Movie Title</div>
+                <div class="rating">4.5</div>
+            </div>
+        </div>
+        <div class="movie">
+            <div class="imageDiv">
+                <img src="./Images/movie.avif" alt="Movie Image" class="movieImage">
+                <div class="ageRating">
+                    <p>U</p>
+                </div>
+            </div>
+            <div class="movieBottomDiv">
+                <div class="movieTitle">Movie Title</div>
+                <div class="rating">4.5</div>
+            </div>
+        </div>
+        <div class="movie">
+            <div class="imageDiv">
+                <img src="./Images/movie.avif" alt="Movie Image" class="movieImage">
+                <div class="ageRating">
+                    <p>U</p>
+                </div>
+            </div>
+            <div class="movieBottomDiv">
+                <div class="movieTitle">Movie Title</div>
+                <div class="rating">4.5</div>
+            </div>
+        </div>
+        <div class="movie">
+            <div class="imageDiv">
+                <img src="./Images/movie.avif" alt="Movie Image" class="movieImage">
+                <div class="ageRating">
+                    <p>U</p>
+                </div>
+            </div>
+            <div class="movieBottomDiv">
+                <div class="movieTitle">Movie Title</div>
+                <div class="rating">4.5</div>
+            </div>
+        </div> -->
+    </main>
+
+    <div class="pagination" id="pagination">
+        <div id="previous" onclick="prePressed()">
+            <img src="./Images/previousSVG.svg" alt="Pre">
+        </div>
+        <div id="pages" class="hideScroll">
+            1 of 1234
+        </div>
+        <div id="next" onclick="nextPressed()">
+            <img src="./Images/nextSVG.svg" alt="Next">
+        </div>
+    </div>
+
+    <!-- Overlay Contents -->
+
+    <div id="overlayDiv">
+        <img src="./Images/close.png" alt="Close" id="overlayCloseButton">
+        <div id="OL">
+
+            <div id="overlayCnt">
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <p>Copyright @ TheMovieFinder.com</p> 
+        <p>This webite uses TMDB API</p>
+    </div>
+
+    <script src="./Js/index.js"></script>
+    <script src="./Js/app.js"></script>
+</body>
+
+</html>
